@@ -4,12 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Book b = new Book(  "Kyle",  "Java programmming ",  "9782329392");
 
-        System.out.println(b.getTitle());
+        UserInterface ui = new UserInterface();
+        ui.mainMenu();
 
-        System.out.println(b.IsOnLoan());
 
-        System.out.println(b);
-        b.setOnLoan(true);
-        System.out.println(b);
     }
 }
